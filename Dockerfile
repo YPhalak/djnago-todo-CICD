@@ -6,8 +6,6 @@ RUN pip install django==3.2
 
 COPY . .
 
-COPY requirements.txt .
-
 RUN apt-get update && apt-get install -y python3-distutils python3-setuptools python3-pip
 
 EXPOSE 8000
